@@ -1,0 +1,3 @@
+module.exports=[33290,a=>{"use strict";var b=a.i(7997);function c(){return{themeColor:"#FDFBF7"}}function d({children:a}){return(0,b.jsx)("html",{lang:"en",children:(0,b.jsx)("body",{children:a})})}a.s(["default",()=>d,"generateViewport",()=>c,"metadata",0,{title:"The Invariant",description:"A magazine exploring the constants amidst chaos. Science, philosophy, and the enduring patterns of our world."}])}];
+
+//# sourceMappingURL=app_layout_tsx_271801d7._.js.map
