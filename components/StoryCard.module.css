@@ -1,0 +1,152 @@
+.storyCard {
+  background: var(--color-bg, #FDFBF7);
+  border: 3px solid var(--color-bright-4, #00B0FF);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: 
+    2px 2px 0 var(--color-bright-2, #00E676),
+    3px 3px 0 var(--color-bright-6, #7C4DFF);
+}
+
+.storyCard:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 
+    3px 3px 0 var(--color-bright-1, #FF1744),
+    6px 6px 0 var(--color-bright-5, #FF3D00),
+    0 12px 32px rgba(255, 23, 68, 0.25);
+  border-color: var(--color-bright-1, #FF1744);
+}
+
+.storyLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.storyImage {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: var(--color-bg-alt, #F7F4ED);
+  position: relative;
+}
+
+.storyImageImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.storyCard:hover .storyImageImg {
+  transform: scale(1.05);
+}
+
+.freshnessBadge {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.storyContent {
+  padding: 1.5rem;
+}
+
+.storyHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.storySection {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-bright-1, #FF1744);
+  font-weight: 700;
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: linear-gradient(135deg, var(--color-bright-3, #FFD600) 0%, var(--color-bright-2, #00E676) 100%);
+  color: var(--color-text, #2C2416);
+  border-radius: 4px;
+  box-shadow: 2px 2px 0 var(--color-bright-1, #FF1744);
+  margin-bottom: 0.5rem;
+}
+
+.freshnessIndicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.freshnessValue {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--color-text, #2C2416);
+  white-space: nowrap;
+}
+
+.storyTitle {
+  font-family: var(--font-heading, 'Cormorant Garamond', serif);
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  color: var(--color-text, #2C2416);
+  line-height: 1.3;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 0 var(--color-bright-2, #00E676);
+}
+
+.storyCard:hover .storyTitle {
+  color: var(--color-bright-1, #FF1744);
+  transform: translateX(4px);
+  text-shadow: 
+    1px 1px 0 var(--color-bright-3, #FFD600),
+    2px 2px 0 var(--color-bright-1, #FF1744);
+}
+
+.storyExcerpt {
+  font-size: 0.9rem;
+  color: var(--color-text-muted, #6B5D4D);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.storyMeta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--color-text-light, #8B7D6B);
+}
+
+.storyAuthor {
+  font-weight: 500;
+}
+
+.storyDate {
+  font-style: italic;
+}
+
+.storyCardLarge .storyImage {
+  height: 300px;
+}
+
+.storyCardLarge .storyTitle {
+  font-size: 1.75rem;
+  text-shadow: 
+    1px 1px 0 var(--color-bright-3, #FFD600),
+    2px 2px 0 var(--color-bright-1, #FF1744);
+}

@@ -16,6 +16,35 @@
   --color-accent-light: #A0522D;
   --color-rule: #D4C4A8;
   --color-rule-dark: #B8A88C;
+  
+  /* Vibrant Bright Colors - 60s Comic & Graffiti Inspired */
+  --color-bright-1: #FF1744;  /* Electric red - bold, confident */
+  --color-bright-2: #00E676;  /* Electric green - vibrant */
+  --color-bright-3: #FFD600;  /* Pure yellow - comic book bold */
+  --color-bright-4: #00B0FF;  /* Electric blue - modern */
+  --color-bright-5: #FF3D00;  /* Deep orange - graffiti style */
+  --color-bright-6: #7C4DFF;  /* Deep purple - vibrant */
+  --color-bright-7: #FF4081;  /* Hot pink - bold */
+  --color-bright-8: #1DE9B6;  /* Cyan - electric */
+  
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+  --space-3xl: 8rem;
+  
+  /* Layout */
+  --max-width: 1200px;
+  --content-width: 720px;
+  --sidebar-width: 280px;
+  
+  /* Fonts - Modern/Vintage/Clean Stack */
+  --font-display: 'Playfair Display', serif;
+  --font-heading: 'Cormorant Garamond', serif;
+  --font-body: 'Source Sans 3', serif;
 }
 
 * {
@@ -30,7 +59,7 @@ html {
 }
 
 body {
-  font-family: var(--font-body, 'Source Sans 3', sans-serif);
+  font-family: var(--font-body);
   font-weight: 400;
   line-height: 1.7;
   color: var(--color-text);
@@ -46,7 +75,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading, 'Cormorant Garamond', serif);
+  font-family: var(--font-heading);
   font-weight: 500;
   line-height: 1.2;
   color: var(--color-text);
@@ -56,14 +85,24 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 3.5rem;
   font-weight: 400;
+  letter-spacing: 0.1em;
+  text-shadow: 
+    1.5px 1.5px 0 var(--color-bright-3),
+    3px 3px 0 var(--color-bright-1);
 }
 
 h2 {
   font-size: 2.5rem;
+  letter-spacing: 0.08em;
+  text-shadow: 
+    1px 1px 0 var(--color-bright-4),
+    2px 2px 0 var(--color-bright-6);
 }
 
 h3 {
   font-size: 1.75rem;
+  letter-spacing: 0.06em;
+  text-shadow: 0.5px 0.5px 0 var(--color-bright-2);
 }
 
 h4 {
