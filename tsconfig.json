@@ -16,6 +16,13 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": [
+    "src",
+    "app",
+    "components",
+    "types",
+    "next-env.d.ts",
+    ".next/types/**/*.ts"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
